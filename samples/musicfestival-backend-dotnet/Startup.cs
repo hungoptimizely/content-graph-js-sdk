@@ -135,6 +135,7 @@ public class Startup
 
         services.AddContentGraph(_configuration, OpenIDConnectOptionsDefaults.AuthenticationScheme);
         services.AddHostedService<ProvisionDatabase>();
+        services.AddFormsApi();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

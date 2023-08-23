@@ -118,6 +118,9 @@ query Start(
                 ImageAlignment
                 Content
             }
+            ... on FormContainerBlock{
+                ...FormContainerBlockFragment
+            }
         }
     }
 }

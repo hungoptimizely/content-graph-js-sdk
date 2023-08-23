@@ -5,3 +5,6 @@
 **/App_Data/blobs
 **/*.development.json
 **/packages
+**/build
+**/.vs
+**/App_Data

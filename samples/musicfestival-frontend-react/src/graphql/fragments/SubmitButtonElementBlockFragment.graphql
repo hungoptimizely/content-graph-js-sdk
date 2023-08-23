@@ -1,0 +1,4 @@
+fragment SubmitButtonElementBlockFragment on SubmitButtonElementBlock{
+    Name
+    ContentType
+}

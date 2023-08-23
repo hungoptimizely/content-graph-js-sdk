@@ -1,0 +1,18 @@
+fragment FormContainerBlockFragment on FormContainerBlock{
+    ContentType
+    SubmitSuccessMessage
+    FormModel{
+        Template
+    }
+    ContentLink{
+        Id
+        WorkId
+    }
+    ElementsArea {
+        ContentLink {
+            Expanded {
+                ...ElementsAreaFragment
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import BuyTicketBlock from '../components/blocks/BuyTicketBlock'
 import ContentBlock from '../components/blocks/ContentBlock'
 import GenericBlock from '../components/blocks/GenericBlock'
+import FormContainerBlock from '../components/blocks/FormContainerBlock'
 
 type ArtistDetailsPageProps = {
     content: any
@@ -18,7 +19,9 @@ function GetBlockComponent(content: any) {
     if (content?.__typename == "BuyTicketBlock") {
         return <BuyTicketBlock content={content} />
     }
-
+    if (content?.__typename == "FormContainerBlock") {
+        return <FormContainerBlock content={content} />
+    }
     return <GenericBlock content={content} />
 }
 

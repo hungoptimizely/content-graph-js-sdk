@@ -1,0 +1,4 @@
+fragment TextboxElementBlockFragment on TextboxElementBlock{
+    Name
+    ContentType
+}

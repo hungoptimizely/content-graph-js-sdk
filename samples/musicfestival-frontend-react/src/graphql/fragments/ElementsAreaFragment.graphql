@@ -1,0 +1,9 @@
+fragment ElementsAreaFragment on IContent{
+    __typename
+    ...on TextboxElementBlock {
+        ...TextboxElementBlockFragment
+    }
+    ...on SubmitButtonElementBlock {
+        ...SubmitButtonElementBlockFragment
+    }
+}

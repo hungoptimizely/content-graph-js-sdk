@@ -6,4 +6,7 @@ fragment ItemsInContentArea on IContent {
     ...on ImageFile {
         ...ImageFile
     }
+    ...on FormContainerBlock {
+        ...FormContainerBlockFragment
+    }
 }

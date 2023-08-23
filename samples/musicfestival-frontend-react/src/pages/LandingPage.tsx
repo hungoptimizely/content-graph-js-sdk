@@ -51,7 +51,7 @@ function LandingPage({ content }: LandingPageProps) {
                                         )
                                     }
                                     return (
-                                        <div key={mainContentAreaItemIdx}>
+                                        <div className="Grid-cell" key={mainContentAreaItemIdx}>
                                             {GetBlockComponent(contentItem)}
                                         </div>
                                     )
